@@ -83,7 +83,7 @@ function playGame(rounds){
         }
     }
     if (humanScore > computerScore) {gameWinner = "Human"} else {gameWinner = "Computer"};
-    alert(`Computer score: ${computerScore}\nHuman score: ${humanScore}\n"The winner is: " + gameWinner`);
+    alert(`Computer score: ${computerScore}\nHuman score: ${humanScore}\nThe winner is: ${gameWinner}`);
 }
 
 function startGame(){
