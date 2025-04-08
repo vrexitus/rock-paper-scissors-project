@@ -62,30 +62,28 @@ function playGame(rounds){
         if (winner == "NONE") {
             humanScore += 0;
             computerScore += 0;
-            console.log(`Human chose: ${humanChoice}`);
-            console.log(`Computer chose: ${computerChoice}`);
-            console.log("Draw!");
+            alert(`Human chose: ${humanChoice}`);
+            alert(`Computer chose: ${computerChoice}`);
+            alert("Draw!");
         } else if (winner == "HUMAN") {
             humanScore += 1;
-            console.log(`Human chose: ${humanChoice}`);
-            console.log(`Computer chose: ${computerChoice}`);
-            console.log("Human wins this round!");
+            alert(`Human chose: ${humanChoice}`);
+            alert(`Computer chose: ${computerChoice}`);
+            alert("Human wins this round!");
         } else if (winner == "COMPUTER") {
             computerScore += 1;
-            console.log(`Human chose: ${humanChoice}`);
-            console.log(`Computer chose: ${computerChoice}`);
-            console.log("Computer wins this round!");
+            alert(`Human chose: ${humanChoice}`);
+            alert(`Computer chose: ${computerChoice}`);
+            alert("Computer wins this round!");
         } else {
-            console.log(`Human chose: ${humanChoice}`);
-            console.log(`Computer chose: ${computerChoice}`);
-            console.log("ERROR");
+            alert(`Human chose: ${humanChoice}`);
+            alert(`Computer chose: ${computerChoice}`);
+            alert("ERROR");
             return ;
         }
     }
     if (humanScore > computerScore) {gameWinner = "Human"} else {gameWinner = "Computer"};
-    console.log(`Computer score: ${computerScore}`);
-    console.log(`Human score: ${humanScore}`);
-    console.log("The winner is: " + gameWinner);
+    alert(`Computer score: ${computerScore}\nHuman score: ${humanScore}\n"The winner is: " + gameWinner`);
 }
 
 function startGame(){
